@@ -1,0 +1,33 @@
+# .clang-format configuration for the 'lemonion' project
+# This version is specifically tailored to match your existing Allman brace style.
+
+Language: Cpp
+BasedOnStyle: LLVM
+
+# --- Indentation ---
+IndentWidth: 2
+UseTab: Never
+TabWidth: 2
+
+# --- Braces (This is the most critical part!) ---
+# This sets the Allman style (braces on a new line) for all constructs.
+BreakBeforeBraces: Allman
+AllowShortBlocksOnASingleLine: false
+AllowShortFunctionsOnASingleLine: None
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+
+# --- Pointers and References ---
+# Aligns '*' and '&' to the left, with the type (e.g., "std::string& s").
+# This matches your project's style.
+PointerAlignment: Left
+
+# --- Line Breaking ---
+ColumnLimit: 100
+BinPackParameters: false
+
+# --- C++ Standard ---
+Standard: Auto
+
+# --- Includes ---
+SortIncludes: true
