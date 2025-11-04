@@ -1,0 +1,3 @@
+./run_clang-tidy.py -checks="-*,bugprone-*,cppcoreguidelines-*,misc-*,modernize-*,-modernize-use-trailing-return-type,performance-*,portability-*,readability-*,google-*,-google-objc-function-naming" -extra-arg-before=-std=c++20 -extra-arg-before=-x -extra-arg-before=c++ -header-filter="^(\.\./src/.*|.*\\.h)$" > 1.out 2>1.err
+
+# ./run_clang-tidy.py -checks="-*,misc-include-cleaner" -extra-arg-before=-std=c++20 -extra-arg-before=-x -extra-arg-before=c++ -header-filter="^(\.\./src/.*|.*\\.h)$" > 1.out 2>1.err
